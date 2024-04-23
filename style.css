@@ -1,0 +1,504 @@
+@font-face {
+    font-family: Chronicle Display;
+    src: url(fonts/Chronicle-Display.otf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(fonts/Gilroy-Bold.ttf);
+}
+@font-face{
+    font-family: Chronicle Display Semibold;
+    src: url(fonts/Chronicle-Display-Semibold.otf)
+}
+@font-face {
+    font-family: Gilroy Medium;
+    src: url(fonts/Gilroy-Medium.ttf);
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #0B1D26;
+}
+
+h1 {
+    margin-top: 32px;
+    margin-bottom: 31px;
+    font-family: Chronicle Display Semibold;
+    line-height: 100px;
+    color: #FFFFFF;
+    font-size: 88px;
+}
+
+h2{
+    font-family: Chronicle Display Semibold;
+    font-size: 64px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.container {
+    padding: 3.33% 4.2% 0 4.2%; 
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    font-family: Gilroy;
+    font-size: 18px; 
+}
+
+a:hover{
+    filter: brightness(125%);
+    text-shadow: 1px 2px 15px rgba(255, 255, 255, 0.3);
+}
+
+a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+ul {
+    font-family: Gilroy;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    padding-top: 39px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    list-style-type: none;
+    user-select: none;
+    padding-right: 71.8%;
+    text-align: right;
+    height: 60px;
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.active {
+    border-right: 3px solid rgba(255, 255, 255, 1);
+}
+
+.hg{
+    position: absolute;
+    width: 100%;
+    z-index: -11;
+}
+
+.bg {
+    z-index: -9;
+    position: absolute;
+    margin-top: 24.7%; 
+    width: 100%;
+}
+
+.gradient1 {
+    position: absolute;
+    z-index: -10;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top left, #0B1D2600, #0B1D26);
+    opacity: 80%;
+}
+
+header {
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 198px;
+}
+
+.logo {
+    font-family: Chronicle Display;
+    font-size: 32px;
+    color: #FFFFFF;
+    letter-spacing: 1%;
+}
+.top {
+    display: flex;
+    column-gap: 40px;
+
+}
+.account{
+    display: flex;
+    gap: 8px;
+}
+.acc {
+    display: flex;
+    font-size: 16px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    font-family: Gilroy;
+    font-size: 18px;
+    color:#FFFFFF;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 12px;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    /*width: 950px;*/
+    max-width: 49.48vw;
+}
+
+.rect {
+    width: 72px;
+    height: 2px;
+    margin: 10px;
+    margin-right: 32px;
+    background: #FBD784;
+}
+
+.header .rect{
+    margin: 10px 0 37px 0;
+}
+.yellow{
+    font-family: Gilroy;
+    color: #FBD784;
+    font-size: 18px;
+    letter-spacing: 6px;
+}
+.scroll{
+    display: flex;
+    gap: 16px;
+}
+.down {
+    display: flex;
+    font-family: Gilroy;
+    color: #FFFFFF; 
+    font-size: 18px; 
+    letter-spacing: normal;  
+}
+
+.item1, .item2{
+    width: 24px;
+    height: 24px;
+}
+
+.gradient2{
+    position: absolute;
+    z-index: -9;
+    width: 100%;
+    height: 700px;
+    /*margin-top: 1200px;*/
+    margin-top: 62.5vw;
+    background: linear-gradient(rgba(11, 29, 39, 0), rgba(11, 29, 39, 1) 72%);
+}
+
+.content{
+    /*margin: 900px 129px 0 129px;*/
+    margin: 944px 7.76% 0 7.76%;
+    max-width: 76.15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content img {
+    max-width: 100%;
+    max-height: 720px;
+}
+.block1, .block2, .block3{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.header{
+    display: flex;
+    gap: 24px;
+}
+
+.box1 .rect{
+    margin: 10px 0 37px 0;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    padding: 141px 114px 140px 150px;
+    /*padding: 12% 10% 19.44% 10.259%;*/
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    padding: 141px 0 140px 264px;
+    /*padding: 11.3% 0 19.44% 18%;*/
+}
+.text{
+    font-family: Gilroy;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 32px;
+    text-align: left;
+    margin: 27px 0 49px 0;
+}
+
+
+.more{
+    display: flex;
+    gap: 16px
+}
+.more img{
+    padding-top: 3px;
+}
+.rmore{
+    font-family: Gilroy;
+    color: #FBD784;
+    font-size: 18px;
+}
+
+/*.rmore::after{
+    content: url(images/arrow_rightward.svg);
+    padding-left: 16px;
+    padding-top: 3px;
+}*/
+
+.num{
+    position: absolute;
+    margin-top: -130px;
+    margin-left: -150px;
+    font-family: Gilroy;
+    font-size: 240px;
+    opacity: 0.1;
+    color: #FFFFFF;
+    user-select: none;
+}
+
+footer {
+    margin: 0 7.76% 0 7.76%;
+    display: flex;
+    justify-content: space-between;
+    /*width: 1462px;*/
+    max-width: 76.15vw;
+}
+
+.footerR{
+    display: flex;
+    gap: 212px;
+}
+
+.copyright {
+    font-family: Gilroy Medium;
+    font-size: 18px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: 73px;
+    margin-bottom: 120px;
+}
+
+.boxTop {
+    font-family: Gilroy;
+    font-size: 24px;
+    color: #FBD784;
+    line-height: 32px;
+}
+
+.boxContent {
+    font-family: Gilroy Medium;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.box4, .box5 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (max-width: 430px){
+    .logo{
+        font-size: 12px;
+    }
+    a{
+        font-size: 6px;
+    }
+    header{
+        margin-bottom: 30px;
+    }
+    .top{
+        gap: 20px;
+    }
+    .acc{
+        font-size: 6px;
+    }
+    .account{
+        gap: 4px;
+    }
+    .account img{
+        height: 7px;
+        width: 7px;
+    }
+    .social{
+        font-size: 7px;
+        gap: 7px;
+        padding-top: 0;
+    }
+    .item1, .item2{
+        width: 7px;
+        height: 7px;
+    }
+    .title{
+        width: 189px;
+    }
+    .rect{
+        width: 18px;
+        height: 1px;
+        margin: 3px;
+        margin-right: 6px;
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+    .yellow{
+        font-size: 5px;
+        letter-spacing: 1px;
+    }
+    h1{
+        margin-top: 0;
+        line-height: 26px;
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+    ul{
+        font-size: 8px;
+        padding-top: 0;
+    }
+    li{
+        height: 15px;
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .active {
+        border-right: 1px solid rgba(255, 255, 255, 1);
+    }
+    .gradient2{
+        height: 100px;
+        margin-top: 306px;
+    }
+    .scroll{
+        gap: 8px;
+    }
+    .down{
+        font-size: 7px;
+    }
+    .scroll img{
+        height: 10px;
+        width: 7px;
+    }
+    .block1, .bloсk2, .block3{
+        flex-direction: column;
+        margin-bottom: 45px;
+    }
+    .block2{
+        flex-direction: column;
+        margin-bottom: 45px;
+    }
+    .num{
+        margin-top: -35px;
+        margin-left: -42px;
+        font-size: 65px;
+    }
+    h2{
+        font-size: 15px;
+        margin: 0;
+    }
+    .text{
+        font-size: 8px;
+        line-height: 15px;
+        margin: 7px 0px 15px 0;
+    }
+    .content{
+        margin: 218px auto;
+        width: 300px;
+        margin-bottom: 0;
+    }
+    .img1{
+        width: 221px;
+        height: 275px;
+        margin: auto;
+    }
+    .img2{
+        width: 221px;
+        height: 275px;
+        margin: auto;
+    }
+    .img3{
+        width: 221px;
+        height: 275px;
+        margin: auto;
+    }
+    .box1, .box2{
+        flex-direction: column;
+        padding: 0;
+    }
+    .box1{
+        padding-bottom: 15px;
+    }
+    .box2{
+        padding-bottom: 15px;
+        order: -1;
+    }
+    .header .rect{
+        margin: 3px 0 7px 0;
+    }
+    .header{
+        gap: 8px;
+    }
+    .more{
+        gap: 6px
+    }
+    .rmore{
+        font-size: 6px;
+    }
+    .more img{
+        width: 10px;
+        height: 8px;
+        padding: 0;
+    }
+    .copyright{
+        font-size: 6px;
+        margin-top: 108px;
+        margin-bottom: 0px;
+    }
+    .boxContent{
+        font-size: 6px;
+    }
+    .boxTop{
+        font-size: 12px;
+    }
+    .footerL{
+        margin-top: 12px;
+    }
+    .footerR{
+        gap: 10px;
+    }
+    .box4, .box5{
+        gap: 0;
+    }
+}
