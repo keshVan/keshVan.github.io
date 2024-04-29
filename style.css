@@ -41,7 +41,7 @@ h2{
 }
 
 .container {
-    padding: 3.33% 4.2% 0 4.2%; 
+    padding: 3.33% 4.2% 0 4.2%;
 }
 
 p {
@@ -51,9 +51,8 @@ p {
 
 a {
     font-family: Gilroy;
-    font-size: 18px; 
+    font-size: 18px;
 }
-
 a:hover{
     filter: brightness(125%);
     text-shadow: 1px 2px 15px rgba(255, 255, 255, 0.3);
@@ -122,7 +121,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #FFFFFF;
-    margin-bottom: 198px;
+    margin-bottom: 21vh;
 }
 
 .logo {
@@ -157,16 +156,15 @@ header {
     display: flex;
     width: fit-content;
     flex-direction: column;
-    justify-content: center;
     gap: 24px;
-    padding-top: 12px;
+    padding-top: 4%;
 }
 
 .title {
     display: flex;
     flex-wrap: wrap;
-    /*width: 950px;*/
     max-width: 49.48vw;
+    margin-left: 50px;
 }
 
 .rect {
@@ -209,17 +207,14 @@ header {
     width: 100%;
     height: 700px;
     /*margin-top: 1200px;*/
-    margin-top: 62.5vw;
+    top: 62.5vw;
     background: linear-gradient(rgba(11, 29, 39, 0), rgba(11, 29, 39, 1) 72%);
 }
 
 .content{
-    /*margin: 900px 129px 0 129px;*/
-    margin: 944px 7.76% 0 7.76%;
-    max-width: 76.15vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /*margin: 905px 129px 0 129px;*/
+    margin: 95vh 7.76% 0 7.76%;
+    max-width: 85%;
 }
 .content img {
     max-width: 100%;
@@ -239,17 +234,18 @@ header {
 .box1 .rect{
     margin: 10px 0 37px 0;
 }
+
 .box1{
     display: flex;
     flex-direction: column;
-    padding: 141px 114px 140px 150px;
-    /*padding: 12% 10% 19.44% 10.259%;*/
+    /*padding: 141px 114px 140px 150px;*/
+    padding: 12% 114px 19.44% 10.259%;
 }
 .box2{
     display: flex;
     flex-direction: column;
-    padding: 141px 0 140px 264px;
-    /*padding: 11.3% 0 19.44% 18%;*/
+    /*padding: 141px 0 140px 264px;*/
+    padding: 11.3% 0 19.44% 18.5%;
 }
 .text{
     font-family: Gilroy;
@@ -259,7 +255,6 @@ header {
     text-align: left;
     margin: 27px 0 49px 0;
 }
-
 
 .more{
     display: flex;
@@ -273,12 +268,6 @@ header {
     color: #FBD784;
     font-size: 18px;
 }
-
-/*.rmore::after{
-    content: url(images/arrow_rightward.svg);
-    padding-left: 16px;
-    padding-top: 3px;
-}*/
 
 .num{
     position: absolute;
@@ -301,7 +290,7 @@ footer {
 
 .footerR{
     display: flex;
-    gap: 212px;
+    gap: 13vw;
 }
 
 .copyright {
@@ -332,13 +321,27 @@ footer {
     flex-direction: column;
     gap: 16px;
 }
-
+@media (max-width: 1445px) {
+    .img1, .img2, .img3{
+        height: 650px;
+    }
+}
+@media (max-width: 1195px){
+    .img1, .img2, .img3{
+        height: 550px;
+    }
+}
+@media (max-width: 1098px){
+    .img1, .img2, .img3{
+        height: 450px;
+    }
+}
 @media (max-width: 430px){
     .logo{
-        font-size: 12px;
+        font-size: 16px;
     }
     a{
-        font-size: 6px;
+        font-size: 10px;
     }
     header{
         margin-bottom: 30px;
@@ -347,23 +350,23 @@ footer {
         gap: 20px;
     }
     .acc{
-        font-size: 6px;
+        font-size: 10px;
     }
     .account{
         gap: 4px;
     }
     .account img{
-        height: 7px;
-        width: 7px;
+        height: 11px;
+        width: 11px;
     }
     .social{
-        font-size: 7px;
+        font-size: 10px;
         gap: 7px;
-        padding-top: 0;
+        padding-top: 5px;
     }
     .item1, .item2{
-        width: 7px;
-        height: 7px;
+        width: 10px;
+        height: 10px;
     }
     .title{
         width: 189px;
@@ -377,13 +380,13 @@ footer {
         margin-bottom: 5px;
     }
     .yellow{
-        font-size: 5px;
+        font-size: 8px;
         letter-spacing: 1px;
     }
     h1{
         margin-top: 0;
-        line-height: 26px;
-        font-size: 18px;
+        line-height: 25px;
+        font-size: 22px;
         margin-bottom: 7px;
     }
     ul{
@@ -399,7 +402,7 @@ footer {
     }
     .gradient2{
         height: 100px;
-        margin-top: 306px;
+        top: 72vw;
     }
     .scroll{
         gap: 8px;
@@ -425,12 +428,12 @@ footer {
         font-size: 65px;
     }
     h2{
-        font-size: 15px;
+        font-size: 18px;
         margin: 0;
     }
     .text{
-        font-size: 8px;
-        line-height: 15px;
+        font-size: 10px;
+        line-height: 18px;
         margin: 7px 0px 15px 0;
     }
     .content{
@@ -487,13 +490,16 @@ footer {
         margin-bottom: 0px;
     }
     .boxContent{
-        font-size: 6px;
+        font-size: 10px;
     }
     .boxTop{
         font-size: 12px;
     }
     .footerL{
         margin-top: 12px;
+    }
+    footer{
+        gap: 20px;
     }
     .footerR{
         gap: 10px;
